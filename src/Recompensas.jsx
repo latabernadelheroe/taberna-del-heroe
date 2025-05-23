@@ -1,3 +1,5 @@
+import './css/styles.css';
+
 const Recompensas = () => {
   const recompensas = [
     { nivel: 1, titulo: "Campesino del Reino", donacion: "1 €", recompensa: "Agradecimiento en web y redes" },
@@ -15,26 +17,44 @@ const Recompensas = () => {
   return (
    <>
       <h2 className="text-3xl font-bold mb-4 text-center mt-5">Recompensas Kickstarter</h2>
-      <div className="overflow-x-auto p-6 bg-[#f8f3e7] text-[#2e1c13] font-serif">
+      <div className="table_pc overflow-x-auto p-6 bg-[#f8f3e7] text-[#2e1c13] font-serif">
          <table className="min-w-full table-auto border-collapse border border-[#2e1c13]">
-         <thead>
-            <tr className="bg-[#2e1c13] text-[#f8f3e7]">
-               <th className="px-4 py-2 border text-left">Nivel</th>
-               <th className="px-4 py-2 border text-left">Título Fantástico</th>
-               <th className="px-4 py-2 border text-left">Donación</th>
-               <th className="px-4 py-2 border text-left">Descripción</th>
-            </tr>
-         </thead>
-         <tbody>
-            {recompensas.map((r, idx) => (
-               <tr key={idx} className="even:bg-[#ede6dc]">
-               <td className="border px-4 py-2">{r.nivel}</td>
-               <td className="border px-4 py-2">{r.titulo}</td>
-               <td className="border px-4 py-2">{r.donacion}</td>
-               <td className="border px-4 py-2">{r.recompensa}</td>
+            <thead>
+               <tr className="bg-[#2e1c13] text-[#f8f3e7]">
+                  <th className="px-4 py-2 border text-center">Nivel</th>
+                  <th className="px-4 py-2 border text-center">Título Fantástico</th>
+                  <th className="px-4 py-2 border text-center">Donación</th>
+                  <th className="px-4 py-2 border text-center">Recompensa</th>
                </tr>
-            ))}
-         </tbody>
+            </thead>
+            <tbody>
+               {recompensas.map((r, idx) => (
+                  <tr key={idx} className="even:bg-[#ede6dc]">
+                  <td className="border px-4 py-2">{r.nivel}</td>
+                  <td className="border px-4 py-2">{r.titulo}</td>
+                  <td className="border px-4 py-2">{r.donacion}</td>
+                  <td className="border px-4 py-2">{r.recompensa}</td>
+                  </tr>
+               ))}
+            </tbody>
+         </table>
+      </div>
+      <div className="table_mobile overflow-x-auto p-6 bg-[#f8f3e7] text-[#2e1c13] font-serif">
+         <table className="min-w-full table-auto border-collapse border border-[#2e1c13]">
+            <thead>
+               <tr className="bg-[#2e1c13] text-[#f8f3e7]">
+                  <th className="px-4 py-2 border text-center">Donación</th>
+                  <th className="px-4 py-2 border text-center">Descripción</th>
+               </tr>
+            </thead>
+            <tbody>
+               {recompensas.map((r, idx) => (
+                  <tr key={idx} className="even:bg-[#ede6dc]">
+                  <td className="border px-4 py-2">{r.donacion}</td>
+                  <td className="border px-4 py-2">{r.recompensa}</td>
+                  </tr>
+               ))}
+            </tbody>
          </table>
       </div>
     </>

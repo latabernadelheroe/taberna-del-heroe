@@ -1,15 +1,54 @@
+.recompensa_mobile {
+   display: none;
+}
+
+.recompensa_pc {
+   height: 100%;
+}
+
+.recompensa_pc p {
+   margin-top: 1.5em;
+}
+
+.table_mobile {
+   display: none;
+}
+
+.header_img {
+   background-image: url('../assets/hero.jpg');
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover; 
+   height: 100vh;
+   width: 100%;
+}
+
 @media (max-width: 768px) {
+   .main_screen {
+      justify-content: center;
+   }
+
    .header_img {
-      background-image: url('../assets/hero.jpg');
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover; 
-      height: 100vh;
-      width: 100%;
       margin-top: 14em;
    }
 
    .btn_lanzar {
       margin-top: 20px;
+   }
+
+   .recompensa_mobile {
+      display: block;
+   }
+
+   .recompensa_pc {
+      display: none;
+   }
+
+   .table_mobile {
+      display: block;
+   }
+
+   .table_pc {
+      display: none;
    }
 }

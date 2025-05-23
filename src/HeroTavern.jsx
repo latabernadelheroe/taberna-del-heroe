@@ -1,10 +1,8 @@
-// src/components/HeroTavern.jsx
 import EmailTavern from './EmailTavern';
-// import heroImg from './assets/hero.jpg'; 
 import d20Img from './assets/d20.png';
-import drinkImg from './assets/drink.png';
+import jarra_blanca from './assets/jarra_blanca.png';
 import hatImg from './assets/hat.png';
-import eventImg from './assets/event.png';// Asegúrate de colocar tu imagen aquí
+import eventImg from './assets/event.png';
 import './css/styles.css';
 import Icon from './components/Icon';
 import { useState } from 'react';
@@ -19,7 +17,7 @@ const HeroTavern = () => {
       text: 'Juegos de mesa'
     },
     {
-      img: drinkImg,
+      img: jarra_blanca,
       text: 'Bebidas temáticas'
     },
     {
@@ -33,13 +31,7 @@ const HeroTavern = () => {
   ]
 
   return (
-    <div className="min-h-screen bg-[#2e1c13] text-[#f8f3e7] font-serif flex flex-col items-center h-screen w-screen flex items-center justify-center">
-      {/* <img
-        src={heroImg}
-        alt="La taberna"
-        className="w-full max-w-3xl rounded-b-2xl shadow-lg"
-      /> */}
-
+    <div className="main_screen min-h-screen bg-[#2e1c13] text-[#f8f3e7] font-serif flex flex-col items-center h-screen w-screen flex items-center">
       <div className="text-center px-6 py-8 w-full header_img">
         <h1 className="text-5xl font-bold m-4 py-8">La Taberna del Héroe</h1>
         <p className="text-xl mb-6">
@@ -58,7 +50,7 @@ const HeroTavern = () => {
         ))}
       </div>
 
-      <div className="bg-[#f8f3e7] text-[#2e1c13] w-full text-center font-medium text-xl px-4 py-4">
+      <div className="recompensa_mobile bg-[#f8f3e7] text-[#2e1c13] w-full text-center font-medium text-xl px-4 py-4">
         <p>¡Apúntate y disfruta de recompensas únicas y épicas!</p>
 
         <button
@@ -70,10 +62,16 @@ const HeroTavern = () => {
 
         {abierto && (
           <div className="mt-2 text-base text-[#2e1c13] transition-all duration-300">
-            {/* <p>Descuentos, ítems exclusivos y misiones especiales solo para miembros.</p> */}
             <Recompensas/>
           </div>
         )}
+      </div>
+      <div className="recompensa_pc bg-[#f8f3e7] text-[#2e1c13] w-full text-center font-medium text-xl px-4 py-4">
+        <p>¡Apúntate y disfruta de recompensas únicas y épicas!</p>
+
+        <div className="mt-2 text-base text-[#2e1c13] transition-all duration-300">
+          <Recompensas/>
+        </div>
       </div>
     </div>
   );
