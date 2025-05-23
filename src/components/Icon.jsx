@@ -1,6 +1,6 @@
 const Icon = ({image, text}) => {
   return (
-      <div className="flex flex-col items-center">
+      <div className="flex flex-col items-center mx-8">
             <img
                src={image}
                alt="Juegos de mesa"

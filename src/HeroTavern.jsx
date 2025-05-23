@@ -1,6 +1,6 @@
 import EmailTavern from './EmailTavern';
 import d20Img from './assets/d20.png';
-import jarra_blanca from './assets/jarra_blanca.png';
+import beer from './assets/beer.png';
 import hatImg from './assets/hat.png';
 import eventImg from './assets/event.png';
 import './css/styles.css';
@@ -17,7 +17,7 @@ const HeroTavern = () => {
       text: 'Juegos de mesa'
     },
     {
-      img: jarra_blanca,
+      img: beer,
       text: 'Bebidas temáticas'
     },
     {
@@ -44,11 +44,13 @@ const HeroTavern = () => {
       <div className="bg-[#f8f3e7] text-[#2e1c13] w-full py-4 text-center font-medium text-xl">
         Ven y vive tu propia aventura junto a tus compañeros de gremio.
       </div>
-      <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 py-6 px-4 text-center text-sm  bg-[#2e1c13] w-full">
+      <div className="grid grid-cols-2 gap-y-6 py-5 px-4 text-center text-sm bg-[#2e1c13] w-full
+                sm:flex sm:flex-wrap sm:justify-center sm:gap-x-8 sm:gap-y-6">
         {icons.map((data, index) => (
           <Icon key={index} image={data.img} text={data.text} />
         ))}
       </div>
+
 
       <div className="recompensa_mobile bg-[#f8f3e7] text-[#2e1c13] w-full text-center font-medium text-xl px-4 py-4">
         <p>¡Apúntate y disfruta de recompensas únicas y épicas!</p>
