@@ -1,0 +1,15 @@
+@media (max-width: 768px) {
+   .header_img {
+      background-image: url('../assets/hero.jpg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover; 
+      height: 100vh;
+      width: 100%;
+      margin-top: 14em;
+   }
+
+   .btn_lanzar {
+      margin-top: 20px;
+   }
+}

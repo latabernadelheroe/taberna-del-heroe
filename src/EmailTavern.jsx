@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import emailjs from 'emailjs-com';
+import './css/styles.css';
 
 function NotificarFormulario() {
   const [formData, setFormData] = useState({
@@ -23,7 +24,7 @@ function NotificarFormulario() {
       },
       'wdn2bhYbzu5eCHp11'
     ).then(
-      (result) => {
+      () => {
         alert('Correo enviado correctamente');
       },
       (error) => {
@@ -56,7 +57,7 @@ function NotificarFormulario() {
       />
       <button
         type="submit"
-        className="bg-[#b55223] text-white px-4 py-2 rounded-md hover:bg-[#94411c] transition"
+        className="bg-[#b55223] text-white px-4 py-2 rounded-md hover:bg-[#94411c] transition btn_lanzar"
       >
         Notifícame al lanzar
       </button>
