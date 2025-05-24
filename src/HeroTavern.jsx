@@ -53,7 +53,7 @@ const HeroTavern = () => {
 
   return (
     <div className="main_screen min-h-screen bg-[#2e1c13] text-[#f8f3e7] font-serif flex flex-col items-center h-screen w-screen flex items-center">
-      <div className="slider-container carrousel">
+      <div className="slider-container carrousel ">
         <div className='text_email_pc'>
           <h1 className="text-5xl font-bold m-4 py-8">La Taberna del Héroe</h1>
           <p className="text-xl mb-6">

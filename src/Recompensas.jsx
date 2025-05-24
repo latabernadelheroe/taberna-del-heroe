@@ -17,6 +17,7 @@ const Recompensas = () => {
   return (
    <>
       <h2 className="text-3xl font-bold mb-4 text-center mt-5">Recompensas Kickstarter</h2>
+      <p className="text-m font-bold mb-4 text-center mt-5">Cada título tiene sus recompensas más las anteriores.</p>
       <div className="table_pc overflow-x-auto p-6 bg-[#f8f3e7] text-[#2e1c13] font-serif">
          <table className="min-w-full table-auto border-collapse border border-[#2e1c13]">
             <thead>

@@ -23,7 +23,7 @@
 }
 
 .carrousel {
-   width: 60%;
+   width: 100vw;
    height: 92vh;
    position: relative;
 }
