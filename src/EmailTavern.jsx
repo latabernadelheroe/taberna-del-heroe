@@ -2,6 +2,10 @@ import { useState } from 'react';
 import emailjs from 'emailjs-com';
 import './css/styles.css';
 
+import instagram from './assets/instagram.png';
+import twitter from './assets/twitter.png';
+import tiktok from './assets/tiktok.png';
+
 function NotificarFormulario() {
   const [formData, setFormData] = useState({
     nombre: '',
@@ -61,6 +65,26 @@ function NotificarFormulario() {
       >
         Notifícame al lanzar
       </button>
+      {/* TODO HACER REDER PARA EL PC */}
+      <div className='redes_mobile'>
+        <p className='text-[#ffff] mt-4'>Y si no quieres perderte ninguna novedad, ¡síguenos en nuestras redes!</p>
+        <div className="flex justify-center mx-8 mt-4">
+          <a href='https://google.com' target="_blank" rel="noopener noreferrer">
+            <img
+              src={twitter}
+              className="w-[40px] h-[40px] object-cover mt-1"
+            />
+          </a>
+          <img
+              src={tiktok}
+              className="w-[50px] h-[50px] object-cover"
+          />
+          <img
+              src={instagram}
+              className="w-[40px] h-[40px] object-cover mt-1"
+          />
+        </div>
+      </div>
     </form>
   );
 }
