@@ -105,7 +105,7 @@ const HeroTavern = () => {
         <EmailTavern/>
       </div>
 
-      <div className="bg-[#f8f3e7] text-[#2e1c13] w-full py-7 text-center font-medium text-xl mt-3">
+      <div className="bg-[#f8f3e7] text-[#2e1c13] w-full py-7 text-center font-medium text-xl">
         Ven y vive tu propia aventura junto a tus compañeros de gremio.
       </div>
       <div className="grid grid-cols-2 gap-y-6 py-5 px-4 text-center text-sm bg-[#2e1c13] w-full
