@@ -29,7 +29,7 @@ const Recompensas = () => {
           onClick={() => setAbierto(!abierto)}
           className="bg-[#b55223] text-white px-4 py-2 rounded-md hover:bg-[#94411c] transition btn_lanzar"
         >
-          {abierto ? 'Ver recompensas pioneras' : 'Ocultar recompensas pioneras'}
+          {abierto ? 'Ocultar recompensas pioneras' : 'Ver recompensas pioneras' }
         </button>
 
         {abierto && (
