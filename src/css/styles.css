@@ -99,9 +99,8 @@
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover; 
-      height: 85svh;
+      height: 100svh;
       width: 100%;
-      /* margin-top: 28em; */
    }
 
    .btn_lanzar {
