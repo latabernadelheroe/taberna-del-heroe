@@ -1,6 +1,11 @@
+import { useState } from 'react';
+import moneda from './assets/moneda.jpg';
+import certificado from './assets/certificado.jpg';
 import './css/styles.css';
 
 const Recompensas = () => {
+  const [abierto, setAbierto] = useState(false);
+   
   const recompensas = [
     { nivel: 1, titulo: "Campesino del Reino", donacion: "1 €", recompensa: "Agradecimiento en web y redes" },
     { nivel: 2, titulo: "Explorador Curioso", donacion: "10 €", recompensa: "Acceso a contenido exclusivo + nombre en mural" },
@@ -18,6 +23,22 @@ const Recompensas = () => {
    <>
       <h2 className="text-3xl font-bold mb-4 text-center mt-5">Recompensas Kickstarter</h2>
       <p className="text-m font-bold mb-4 text-center mt-5">Cada título tiene sus recompensas más las anteriores.</p>
+      <p className="text-xl font-bold mb-4 text-center mt-5">*¡Los 500 primeros en cruzar nuestras puertas serán honrados con una moneda exclusiva y un pergamino oficial que los acreditará como Aventureros Pioneros!</p>
+      <div className="bg-[#f8f3e7] text-[#2e1c13] w-full text-center font-medium text-xl px-4 py-4">
+        <button
+          onClick={() => setAbierto(!abierto)}
+          className="bg-[#b55223] text-white px-4 py-2 rounded-md hover:bg-[#94411c] transition btn_lanzar"
+        >
+          {abierto ? 'Ver recompensas pioneras' : 'Ocultar recompensas pioneras'}
+        </button>
+
+        {abierto && (
+          <div className="w-100 flex flex-col md:flex-row justify-center items-center transition-all duration-300 mt-8">
+            <img src={certificado} className="w-[250px] h-[350px] object-cover" />
+            <img src={moneda} className="w-[350px] h-[350px] object-cover md:ml-6 mt-4 md:mt-0" />
+         </div>
+        )}
+      </div>
       <div className="table_pc overflow-x-auto p-6 bg-[#f8f3e7] text-[#2e1c13] font-serif">
          <table className="min-w-full table-auto border-collapse border border-[#2e1c13]">
             <thead>

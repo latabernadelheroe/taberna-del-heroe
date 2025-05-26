@@ -8,6 +8,10 @@ import taberna1 from './assets/taberna1.jpg';
 import taberna2 from './assets/taberna2.jpg';
 import taberna3 from './assets/taberna3.png';
 import taberna4 from './assets/taberna4.png';
+import instagram from './assets/instagram.png';
+import twitter from './assets/twitter.png';
+import tiktok from './assets/tiktok.png';
+
 import './css/styles.css';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -53,13 +57,30 @@ const HeroTavern = () => {
 
   return (
     <div className="main_screen min-h-screen bg-[#2e1c13] text-[#f8f3e7] font-serif flex flex-col items-center h-screen w-screen flex items-center">
-      <div className="slider-container carrousel ">
+      <div className="slider-container carrousel">
         <div className='text_email_pc'>
           <h1 className="text-5xl font-bold m-4 py-8">La Taberna del Héroe</h1>
           <p className="text-xl mb-6">
             Una taberna de fantasía medieval para vivir tus propias aventuras en la vida real.
           </p>
-          <EmailTavern/>
+          <EmailTavern />
+
+          <div className="redes_pc hidden md:block mt-4 text-white text-center">
+            <p className="mb-4">
+              Y si no quieres perderte ninguna novedad, ¡síguenos en nuestras redes!
+            </p>
+            <div className="flex justify-center items-center gap-6">
+              <a href="https://x.com/tabernadelheroe" target="_blank" rel="noopener noreferrer">
+                <img src={twitter} alt="Twitter"/>
+              </a>
+              <a href="https://www.tiktok.com/@tabernadelheroe" target="_blank" rel="noopener noreferrer">
+                <img src={tiktok} alt="TikTok"/>
+              </a>
+              <a href="https://www.instagram.com/tabernadelheroe" target="_blank" rel="noopener noreferrer">
+                <img src={instagram} alt="Instagram"/>
+              </a>
+            </div>
+          </div>
         </div>
         <Slider {...settings}>
           <div>
@@ -81,11 +102,10 @@ const HeroTavern = () => {
         <p className="text-xl mb-6">
           Una taberna de fantasía medieval para vivir tus propias aventuras en la vida real.
         </p>
-
         <EmailTavern/>
       </div>
 
-      <div className="bg-[#f8f3e7] text-[#2e1c13] w-full py-4 text-center font-medium text-xl">
+      <div className="bg-[#f8f3e7] text-[#2e1c13] w-full py-7 text-center font-medium text-xl">
         Ven y vive tu propia aventura junto a tus compañeros de gremio.
       </div>
       <div className="grid grid-cols-2 gap-y-6 py-5 px-4 text-center text-sm bg-[#2e1c13] w-full
@@ -119,22 +139,6 @@ const HeroTavern = () => {
           <Recompensas/>
         </div>
       </div>
-        <div className="slider-container carrousel_mobile">
-          <Slider {...settings}>
-            <div>
-              <img src={taberna4} />
-            </div>
-            <div>
-              <img src={taberna3} />
-            </div>
-            <div>
-              <img src={taberna1} />
-            </div>
-            <div>
-              <img src={taberna2} />
-            </div>
-          </Slider>
-        </div>
     </div>
   );
 };
