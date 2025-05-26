@@ -82,7 +82,7 @@
 
    .main_screen {
       justify-content: center;
-      height: 100vh;
+      /* height: 100vh; */
    }
 
    .carrousel {
@@ -99,9 +99,9 @@
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover; 
-      height: 100svh;
+      height: 85svh;
       width: 100%;
-      margin-top: 28em;
+      /* margin-top: 28em; */
    }
 
    .btn_lanzar {
