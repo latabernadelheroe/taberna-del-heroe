@@ -97,7 +97,7 @@ const HeroTavern = () => {
           </div>
         </Slider>
       </div>
-      <div className="text-center px-6 py-8 header_img">
+      <div className="text-center px-6 py-2 header_img">
         <h1 className="text-5xl font-bold m-4 py-8">La Taberna del Héroe</h1>
         <p className="text-xl mb-6">
           Una taberna de fantasía medieval para vivir tus propias aventuras en la vida real.
@@ -105,7 +105,7 @@ const HeroTavern = () => {
         <EmailTavern/>
       </div>
 
-      <div className="bg-[#f8f3e7] text-[#2e1c13] w-full py-7 text-center font-medium text-xl">
+      <div className="bg-[#f8f3e7] text-[#2e1c13] w-full py-7 text-center font-medium text-xl" style={{padding: '1.5em'}}>
         Ven y vive tu propia aventura junto a tus compañeros de gremio.
       </div>
       <div className="grid grid-cols-2 gap-y-6 py-5 px-4 text-center text-sm bg-[#2e1c13] w-full
