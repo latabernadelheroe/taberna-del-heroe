@@ -49,15 +49,18 @@ function NotificarFormulario() {
         placeholder="Nombre"
         value={formData.nombre}
         onChange={handleChange}
-        className="p-2 rounded-md border border-gray-400 w-full sm:w-auto"
+        className="p-2 rounded-md border border-gray-400 w-full sm:w-auto !bg-white !text-black"
+        style={{ WebkitTextFillColor: '#000000', caretColor: '#000000' }}
       />
+
       <input
         type="email"
         name="correo"
         placeholder="Correo electrónico"
         value={formData.correo}
         onChange={handleChange}
-        className="p-2 rounded-md border border-gray-400 w-full sm:w-auto"
+        className="p-2 rounded-md border border-gray-400 w-full sm:w-auto !bg-white !text-black"
+        style={{ WebkitTextFillColor: '#000000', caretColor: '#000000' }}
       />
       <button
         type="submit"
