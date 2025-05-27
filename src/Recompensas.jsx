@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import moneda from './assets/moneda.jpg';
+import moneda2 from './assets/moneda2.jpeg';
 import certificado from './assets/certificado.jpg';
 import './css/styles.css';
 
@@ -35,7 +35,7 @@ const Recompensas = () => {
         {abierto && (
           <div className="w-100 flex flex-col md:flex-row justify-center items-center transition-all duration-300 mt-8">
             <img src={certificado} className="w-[250px] h-[350px] object-cover" />
-            <img src={moneda} className="w-[350px] h-[350px] object-cover md:ml-6 mt-4 md:mt-0" />
+            <img src={moneda2} className="w-[350px] h-[350px] object-cover md:ml-6 mt-4 md:mt-0" />
          </div>
         )}
       </div>
