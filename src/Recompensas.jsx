@@ -45,7 +45,7 @@ const Recompensas = () => {
                <tr className="bg-[#2e1c13] text-[#f8f3e7]">
                   <th className="px-4 py-2 border text-center">Nivel</th>
                   <th className="px-4 py-2 border text-center">Título Fantástico</th>
-                  <th className="px-4 py-2 border text-center">Donación</th>
+                  <th className="px-4 py-2 border text-center">Aportación Aventurero</th>
                   <th className="px-4 py-2 border text-center">Recompensa</th>
                </tr>
             </thead>
@@ -65,7 +65,7 @@ const Recompensas = () => {
          <table className="min-w-full table-auto border-collapse border border-[#2e1c13]">
             <thead>
                <tr className="bg-[#2e1c13] text-[#f8f3e7]">
-                  <th className="px-4 py-2 border text-center">Donación</th>
+                  <th className="px-4 py-2 border text-center">Aportación Aventurero</th>
                   <th className="px-4 py-2 border text-center">Descripción</th>
                </tr>
             </thead>
